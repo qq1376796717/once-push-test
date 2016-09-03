@@ -41,6 +41,7 @@
 -(void)updataImage:(NSNumber *)number{
     UIImage *image_s=array_image [[number intValue]+1 ];
     self.imageview.image=image_s;
+    NSLog(@"123");
     
     
 }
