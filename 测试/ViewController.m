@@ -34,7 +34,7 @@
 -(void)loadImage:(NSNumber *)number{
     NSData *data=[NSData dataWithContentsOfURL:[NSURL URLWithString:url[[number intValue]]]];
     [array_image addObject:data];
-    NSLog(@">>>R%@",data);
+    NSLog(@">>>%@",data);
     [self performSelectorOnMainThread:@selector(updataImage:) withObject:data waitUntilDone:YES];
     
 }
